@@ -1,0 +1,25 @@
+{
+  "port": {
+    "admin": "up",
+    "oper": "up",
+    "speed": 1000,
+    "duplex": "full",
+    "peer_speed": 1000,
+    "peer_duplex": "full",
+    "access_vlan": 10,
+    "endpoint_vlan": 10
+  },
+  "before": {
+    "crc": 240,
+    "late_collisions": 12
+  },
+  "after": {
+    "crc": 240,
+    "late_collisions": 12
+  },
+  "poe": {
+    "available_watts": 150,
+    "ap_count": 8,
+    "each_watts": 15.4
+  }
+}

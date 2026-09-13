@@ -1,0 +1,33 @@
+evidence_path,observed_faulty_value
+before.gateway_ping,True
+before.remote_ip_ping,True
+before.dns_ok,True
+before.https_ok,False
+before.vlan20_allowed,False
+before.acl_expected,True
+after.gateway_ping,True
+after.remote_ip_ping,True
+after.dns_ok,True
+after.https_ok,True
+after.vlan20_allowed,True
+after.acl_expected,False
+change.target,permit all traffic
+change.scope.0,trunk VLAN20
+change.scope.1,ACL any any
+change.approval,
+change.rollback,
+change.saved_before,False
+regression.0.test,staff HTTPS
+regression.0.pass,True
+regression.1.test,guest-to-staff denied
+regression.1.pass,True
+regression.2.test,management SSH
+regression.2.pass,True
+timeline.0.event,detect
+timeline.0.seconds,0
+timeline.1.event,approve
+timeline.1.seconds,10
+timeline.2.event,change
+timeline.2.seconds,20
+timeline.3.event,verify
+timeline.3.seconds,40

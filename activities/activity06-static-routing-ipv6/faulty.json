@@ -1,0 +1,36 @@
+{
+  "routes": [
+    {
+      "prefix": "0.0.0.0/0",
+      "next": "10.0.0.2",
+      "distance": 1,
+      "up": true
+    },
+    {
+      "prefix": "192.0.2.0/24",
+      "next": "10.0.0.2",
+      "distance": 1,
+      "up": true
+    },
+    {
+      "prefix": "192.0.2.50/32",
+      "next": "10.0.0.2",
+      "distance": 1,
+      "up": true
+    },
+    {
+      "prefix": "192.0.2.0/24",
+      "next": "10.0.0.6",
+      "distance": 1,
+      "up": true
+    }
+  ],
+  "target": "192.0.2.50",
+  "expected_next": "10.0.0.6",
+  "ipv6": {
+    "prefix": "2001:db8:20::/64",
+    "next": "fe80::2",
+    "interface": ""
+  },
+  "failure_prefix": "192.0.2.0/24"
+}

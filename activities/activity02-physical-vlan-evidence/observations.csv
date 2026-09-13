@@ -1,0 +1,16 @@
+evidence_path,observed_faulty_value
+port.admin,up
+port.oper,up
+port.speed,100
+port.duplex,half
+port.peer_speed,1000
+port.peer_duplex,full
+port.access_vlan,20
+port.endpoint_vlan,10
+before.crc,240
+before.late_collisions,12
+after.crc,280
+after.late_collisions,20
+poe.available_watts,150
+poe.ap_count,8
+poe.each_watts,15.4

@@ -1,0 +1,58 @@
+{
+  "neighbors": [
+    {
+      "router_id": "1.1.1.1",
+      "area": 0,
+      "hello": 10,
+      "dead": 40,
+      "mtu": 1500,
+      "state": "FULL"
+    },
+    {
+      "router_id": "2.2.2.2",
+      "area": 0,
+      "hello": 5,
+      "dead": 20,
+      "mtu": 1500,
+      "state": "INIT"
+    }
+  ],
+  "paths": [
+    {
+      "next": "10.0.0.2",
+      "costs": [
+        10,
+        10
+      ]
+    },
+    {
+      "next": "10.0.0.6",
+      "costs": [
+        10,
+        20
+      ]
+    }
+  ],
+  "installed_next": "10.0.0.6",
+  "hsrp": {
+    "vip": "10.10.10.1",
+    "active_count": 1,
+    "standby_count": 1,
+    "postfailure_owner": "R2",
+    "host_gateway": "10.10.10.1"
+  },
+  "refresh": {
+    "ospfv3": {
+      "area": 0,
+      "ipv6_enabled": true,
+      "router_id": "3.3.3.3",
+      "state": "FULL"
+    },
+    "vrrp": {
+      "group": 10,
+      "vip": "10.10.10.1",
+      "masters": 1,
+      "backup": 1
+    }
+  }
+}

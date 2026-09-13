@@ -1,0 +1,17 @@
+evidence_path,observed_faulty_value
+left.mode,trunk
+left.native,99
+left.allowed.0,10
+left.allowed.1,20
+left.allowed.2,99
+right.mode,trunk
+right.native,1
+right.allowed.0,10
+right.allowed.1,99
+svIs.0.vlan,10
+svIs.0.prefix,10.10.10.1/24
+svIs.0.up,True
+svIs.1.vlan,20
+svIs.1.prefix,10.10.20.1/24
+svIs.1.up,True
+ip_routing,True

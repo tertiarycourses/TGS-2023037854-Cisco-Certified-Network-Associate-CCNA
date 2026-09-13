@@ -1,0 +1,13 @@
+evidence_path,observed_faulty_value
+allocations.0.prefix,10.10.0.0/26
+allocations.0.required,60
+allocations.1.prefix,10.10.0.64/27
+allocations.1.required,28
+allocations.2.prefix,10.10.0.96/28
+allocations.2.required,12
+host,10.10.0.10/26
+gateway,10.10.0.65
+remote,198.51.100.20
+frame_dst,00:aa:bb:cc:dd:01
+gateway_mac,00:aa:bb:cc:dd:01
+arp_target,198.51.100.20

@@ -1,0 +1,39 @@
+{
+  "ports": [
+    {
+      "name": "Gi1/0/1",
+      "role": "endpoint",
+      "dhcp_trust": false,
+      "dai_trust": false,
+      "ra_guard": true,
+      "storm_percent": 1,
+      "port_security_max": 2
+    },
+    {
+      "name": "Gi1/0/24",
+      "role": "uplink",
+      "dhcp_trust": true,
+      "dai_trust": true,
+      "ra_guard": false,
+      "storm_percent": 10,
+      "port_security_max": null
+    }
+  ],
+  "binding": {
+    "ip": "10.10.10.10",
+    "mac": "0011.2233.4455",
+    "vlan": 10,
+    "port": "Gi1/0/1"
+  },
+  "arp": {
+    "ip": "10.10.10.10",
+    "mac": "0011.2233.4455",
+    "vlan": 10,
+    "port": "Gi1/0/1"
+  },
+  "wireless": {
+    "auth": "WPA2-Enterprise",
+    "cipher": "AES",
+    "psk_in_files": false
+  }
+}

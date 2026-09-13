@@ -1,0 +1,56 @@
+{
+  "rules": [
+    {
+      "action": "permit",
+      "protocol": "tcp",
+      "source": "10.10.99.0/24",
+      "destination": "192.0.2.1/32",
+      "port": 22
+    },
+    {
+      "action": "deny",
+      "protocol": "ip",
+      "source": "0.0.0.0/0",
+      "destination": "0.0.0.0/0",
+      "port": null
+    }
+  ],
+  "flows": [
+    {
+      "source": "10.10.99.10",
+      "destination": "192.0.2.1",
+      "protocol": "tcp",
+      "port": 22,
+      "expected": "permit"
+    },
+    {
+      "source": "10.10.10.10",
+      "destination": "192.0.2.1",
+      "protocol": "tcp",
+      "port": 22,
+      "expected": "deny"
+    },
+    {
+      "source": "10.10.99.10",
+      "destination": "192.0.2.1",
+      "protocol": "tcp",
+      "port": 23,
+      "expected": "deny"
+    }
+  ],
+  "vty": {
+    "transport": [
+      "ssh"
+    ],
+    "timeout_minutes": 5,
+    "local_secret": true
+  },
+  "aaa": {
+    "client": "router",
+    "server": "192.0.2.181",
+    "protocol": "RADIUS",
+    "auth_port": 1812,
+    "fallback": "local",
+    "console_tested": true
+  }
+}

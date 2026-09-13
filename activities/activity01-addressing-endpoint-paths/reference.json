@@ -1,0 +1,22 @@
+{
+  "allocations": [
+    {
+      "prefix": "10.10.0.0/26",
+      "required": 60
+    },
+    {
+      "prefix": "10.10.0.64/27",
+      "required": 28
+    },
+    {
+      "prefix": "10.10.0.96/28",
+      "required": 12
+    }
+  ],
+  "host": "10.10.0.10/26",
+  "gateway": "10.10.0.1",
+  "remote": "198.51.100.20",
+  "frame_dst": "00:aa:bb:cc:dd:01",
+  "gateway_mac": "00:aa:bb:cc:dd:01",
+  "arp_target": "10.10.0.1"
+}

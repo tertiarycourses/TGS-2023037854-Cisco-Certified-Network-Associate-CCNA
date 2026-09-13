@@ -1,0 +1,67 @@
+{
+  "translations": [
+    {
+      "inside": "10.10.10.10",
+      "local_port": 49152,
+      "global": "203.0.113.2",
+      "global_port": 30001,
+      "protocol": "tcp"
+    },
+    {
+      "inside": "10.10.10.11",
+      "local_port": 49152,
+      "global": "203.0.113.2",
+      "global_port": 30002,
+      "protocol": "tcp"
+    }
+  ],
+  "lease": {
+    "ip": "10.10.10.10/24",
+    "gateway": "10.10.10.1",
+    "dns": "192.0.2.53",
+    "giaddr": "10.10.10.1",
+    "sequence": [
+      "DISCOVER",
+      "OFFER",
+      "REQUEST",
+      "ACK"
+    ]
+  },
+  "dns": [
+    {
+      "type": "A",
+      "name": "app.example.test",
+      "value": "192.0.2.50"
+    },
+    {
+      "type": "AAAA",
+      "name": "app.example.test",
+      "value": "2001:db8::50"
+    },
+    {
+      "type": "MX",
+      "name": "example.test",
+      "value": "10 mail.example.test"
+    },
+    {
+      "type": "NS",
+      "name": "example.test",
+      "value": "ns1.example.test"
+    },
+    {
+      "type": "PTR",
+      "name": "50.2.0.192.in-addr.arpa",
+      "value": "app.example.test"
+    }
+  ],
+  "ntp": {
+    "synchronized": true,
+    "offset_ms": 2,
+    "budget_ms": 10
+  },
+  "transfer": {
+    "protocol": "SCP",
+    "hash_before": "824ba2d40de5b9ff02d36c33bfc93918f633ef427b331cab2cb4de9fe78386bc",
+    "hash_after": "824ba2d40de5b9ff02d36c33bfc93918f633ef427b331cab2cb4de9fe78386bc"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "members": [
+    {
+      "name": "Gi1/0/23",
+      "mode": "passive",
+      "peer_mode": "passive",
+      "speed": 1000,
+      "vlan_signature": "10,20,99",
+      "bundled": false
+    },
+    {
+      "name": "Gi1/0/24",
+      "mode": "active",
+      "peer_mode": "passive",
+      "speed": 100,
+      "vlan_signature": "10,99",
+      "bundled": false
+    }
+  ],
+  "switches": [
+    {
+      "name": "DIST1",
+      "priority": 4096,
+      "mac": "000000000001"
+    },
+    {
+      "name": "DIST2",
+      "priority": 8192,
+      "mac": "000000000002"
+    }
+  ],
+  "observed_root": "DIST1",
+  "paths": [
+    {
+      "name": "Po1",
+      "state": "forwarding"
+    },
+    {
+      "name": "Gi1/0/22",
+      "state": "alternate"
+    }
+  ],
+  "failure": {
+    "failed": "Po1",
+    "new_forwarding": "Gi1/0/22",
+    "seconds": 2.1,
+    "budget": 5
+  }
+}

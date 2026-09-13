@@ -1,0 +1,33 @@
+{
+  "left": {
+    "mode": "trunk",
+    "native": 99,
+    "allowed": [
+      10,
+      20,
+      99
+    ]
+  },
+  "right": {
+    "mode": "trunk",
+    "native": 99,
+    "allowed": [
+      10,
+      20,
+      99
+    ]
+  },
+  "svIs": [
+    {
+      "vlan": 10,
+      "prefix": "10.10.10.1/24",
+      "up": true
+    },
+    {
+      "vlan": 20,
+      "prefix": "10.10.20.1/24",
+      "up": true
+    }
+  ],
+  "ip_routing": true
+}

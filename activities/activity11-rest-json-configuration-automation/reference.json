@@ -1,0 +1,30 @@
+{
+  "response": {
+    "status": 200,
+    "content_type": "application/json",
+    "body": {
+      "interfaces": [
+        {
+          "name": "GigabitEthernet0/1",
+          "enabled": true,
+          "description": "Users"
+        }
+      ]
+    }
+  },
+  "desired": {
+    "name": "GigabitEthernet0/1",
+    "enabled": true,
+    "description": "Users"
+  },
+  "request": {
+    "method": "GET",
+    "tls_verify": true,
+    "token_in_file": false
+  },
+  "agent": {
+    "prompt": "Analyze sanitized interface counters. Return a proposed change, tests and rollback. Do not execute commands. Require human approval before writes.",
+    "allow_writes": false,
+    "sanitized": true
+  }
+}

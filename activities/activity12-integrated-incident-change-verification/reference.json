@@ -1,0 +1,59 @@
+{
+  "before": {
+    "gateway_ping": true,
+    "remote_ip_ping": true,
+    "dns_ok": true,
+    "https_ok": false,
+    "vlan20_allowed": false,
+    "acl_expected": true
+  },
+  "after": {
+    "gateway_ping": true,
+    "remote_ip_ping": true,
+    "dns_ok": true,
+    "https_ok": true,
+    "vlan20_allowed": true,
+    "acl_expected": true
+  },
+  "change": {
+    "target": "trunk allowed VLAN20",
+    "scope": [
+      "trunk VLAN20"
+    ],
+    "approval": "trainer sandbox",
+    "rollback": "restore saved trunk allowed VLAN list",
+    "saved_before": true
+  },
+  "regression": [
+    {
+      "test": "staff HTTPS",
+      "pass": true
+    },
+    {
+      "test": "guest-to-staff denied",
+      "pass": true
+    },
+    {
+      "test": "management SSH",
+      "pass": true
+    }
+  ],
+  "timeline": [
+    {
+      "event": "detect",
+      "seconds": 0
+    },
+    {
+      "event": "approve",
+      "seconds": 10
+    },
+    {
+      "event": "change",
+      "seconds": 20
+    },
+    {
+      "event": "verify",
+      "seconds": 40
+    }
+  ]
+}

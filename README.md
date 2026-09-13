@@ -1,69 +1,75 @@
-# TGS-2023037854 - Cisco Certified Network Associate (CCNA)
+# Cisco Certified Network Associate (CCNA)
 
-> Course: Cisco Certified Network Associate (CCNA)  
-> Course Code: TGS-2023037854  
-> Register here: https://www.tertiarycourses.com.sg/wsq-cisco-certified-network-associate-ccna.html
+Build, diagnose and verify enterprise network paths through practical Cisco switching, routing, services, security and automation exercises.
 
-Hands-on Cisco Certified Network Associate labs for learners preparing for CCNA 200-301 networking scenarios. The labs cover network fundamentals, IPv4 and IPv6 addressing, switching, VLANs, trunks, STP, EtherChannel, routing, OSPF, IP services, NAT, DHCP, DNS, NTP, device security, ACLs, wireless concepts, troubleshooting, and automation fundamentals.
+[View course details and register](https://www.tertiarycourses.com.sg/wsq-cisco-certified-network-associate-ccna.html)
 
-## Courseware
+| Course detail | Information |
+|---|---|
+| Course code | `TGS-2023037854` |
+| Programme | WSQ |
+| Duration | 5 days / 40 hours: 38 training hours and 2 assessment hours |
+| Registration | [View course details and register](https://www.tertiarycourses.com.sg/wsq-cisco-certified-network-associate-ccna.html) |
+| Funding | Up to 70% for eligible learners or employers. Eligibility and current terms apply; see the registration page. |
+| Skills Framework | Network Configuration · `ICT-DIT-3009-1.1` |
 
-| File | Description |
-| --- | --- |
-| [Learner Guide](LG-Cisco-Certified-Network-Associate-CCNA.md) | Detailed step-by-step guide for the full course. |
-| [Labs Index](labs/README.md) | Quick access to all hands-on labs. |
-| [Tools Reference](labs/tools.md) | Free tools and command references used in the labs. |
+## About the course
 
-## How to Use
+Interpret packet paths, plan addressing, configure network devices and diagnose faults using measurable evidence. The course combines technical teaching with 19 hours of activities. Network fixtures provide an offline analysis route alongside the Cisco sandbox exercises.
 
-1. Open the learner guide first and review the lab setup checklist.
-2. Complete the labs in order because later labs reuse addressing, VLAN, routing, and verification habits from earlier labs.
-3. Use Cisco Packet Tracer, Cisco Modeling Labs, GNS3, EVE-NG, or real lab equipment as available.
-4. Save device configurations and screenshots after each lab.
-5. Record verification commands, symptoms, fixes, and lessons learned in your lab journal.
+The main curriculum covers the [current CCNA 200-301 v1.1 blueprint](https://learningcontent.cisco.com/documents/marketing/exam-topics/200-301-CCNA-v1.1.pdf). A separately labelled supplement covers the [announced v2.0 blueprint](https://learningcontent.cisco.com/documents/marketing/exam-topics/200-301_CCNA_v2.0_Exam_Topics_PDF.pdf). Cisco lists 3 February 2027 as the v2.0 launch date; learners should check the blueprint for their exam date. Completing this WSQ course does not itself award Cisco certification.
 
-## Lab Catalogue
+## Learning outcomes
 
-### Network Fundamentals
+- Convert organisational networking needs into technical requirements and select suitable components.
+- Implement devices and services against a network blueprint and enforce the required access policies.
+- Select management tools and establish reporting, administration and network stability checks.
 
-| Lab | Title | Skills Practised |
-| --- | --- | --- |
-| [Lab 01](labs/lab-01-network-models-addressing-subnetting.md) | Network Models, Addressing, and Subnetting | OSI/TCP-IP, encapsulation, IPv4 subnetting, IPv6 basics |
-| [Lab 02](labs/lab-02-device-basics-cabling-management.md) | Device Basics, Cabling, and Management Access | Console setup, hostname, passwords, SSH, interface status, CDP/LLDP |
+## Topics covered
 
-### Network Access
+| Current exam domain | Weight | Technical practice |
+|---|---:|---|
+| Network Fundamentals | 20% | Packet/frame boundaries, cabling, subnetting, IPv6, wireless and virtualisation |
+| Network Access | 20% | VLANs, trunks, discovery, LACP, Rapid PVST+ and WLAN policy |
+| IP Connectivity | 25% | Route selection, IPv4/IPv6 static routes, OSPFv2 and gateway redundancy |
+| IP Services | 10% | NAT, DHCP, DNS, NTP, syslog, SNMP, QoS and SSH |
+| Security Fundamentals | 15% | Access controls, ACLs, Layer 2 controls, AAA, VPNs and WLAN security |
+| Automation and Programmability | 10% | Controllers, AI/ML, REST authentication, JSON, Ansible and Terraform |
 
-| Lab | Title | Skills Practised |
-| --- | --- | --- |
-| [Lab 03](labs/lab-03-vlans-trunks-intervlan-routing.md) | VLANs, Trunks, and Inter-VLAN Routing | Access ports, trunks, router-on-a-stick, SVIs, verification |
-| [Lab 04](labs/lab-04-stp-etherchannel-layer2-troubleshooting.md) | STP, EtherChannel, and Layer 2 Troubleshooting | Rapid PVST+, root bridge, PortFast, LACP, MAC table, loop prevention |
+The v2.0 supplement adds targeted diagnosis, OSPFv3, secure file transfer, DNS record analysis, storm control, RA guard and agentic AI operations.
 
-### IP Connectivity and Services
+## Activities
 
-| Lab | Title | Skills Practised |
-| --- | --- | --- |
-| [Lab 05](labs/lab-05-static-routing-ospf-ipv6.md) | Static Routing, OSPF, and IPv6 | Static routes, default routes, floating routes, OSPFv2, IPv6 addressing |
-| [Lab 06](labs/lab-06-ip-services-nat-dhcp-dns-ntp-syslog.md) | IP Services: NAT, DHCP, DNS, NTP, and Syslog | DHCP, NAT/PAT, DNS lookup, NTP, syslog, SNMP concepts |
+Each folder contains its own instructions and checklist PDFs, synthetic data, scripts and configuration specimens. Follow the detailed Learner Guide and the activity instructions; identify simulator limitations before executing an extension.
 
-### Security, Wireless, and Automation
+- [Activity 01: Addressing and endpoint paths](activities/activity01-addressing-endpoint-paths/README.md) — 90 minutes.
+- [Activity 02: Physical and VLAN evidence](activities/activity02-physical-vlan-evidence/README.md) — 90 minutes.
+- [Activity 03: Trunks and inter-VLAN routing](activities/activity03-trunks-inter-vlan-routing/README.md) — 100 minutes.
+- [Activity 04: EtherChannel and STP resilience](activities/activity04-etherchannel-stp-resilience/README.md) — 100 minutes.
+- [Activity 05: Wireless WLAN and policy mapping](activities/activity05-wireless-wlan-policy-mapping/README.md) — 90 minutes.
+- [Activity 06: Static routing and IPv6](activities/activity06-static-routing-ipv6/README.md) — 100 minutes.
+- [Activity 07: OSPF and gateway failover](activities/activity07-ospf-gateway-failover/README.md) — 120 minutes.
+- [Activity 08: NAT DHCP DNS and time](activities/activity08-nat-dhcp-dns-time/README.md) — 100 minutes.
+- [Activity 09: ACL and secure management](activities/activity09-acl-secure-management/README.md) — 110 minutes.
+- [Activity 10: Layer2 and wireless security](activities/activity10-layer2-wireless-security/README.md) — 90 minutes.
+- [Activity 11: REST JSON and configuration automation](activities/activity11-rest-json-configuration-automation/README.md) — 80 minutes.
+- [Activity 12: Integrated incident and change verification](activities/activity12-integrated-incident-change-verification/README.md) — 70 minutes.
 
-| Lab | Title | Skills Practised |
-| --- | --- | --- |
-| [Lab 07](labs/lab-07-security-acls-port-security-wireless.md) | Security, ACLs, Port Security, and Wireless | Standard/extended ACLs, secure management, port security, WLAN concepts |
-| [Lab 08](labs/lab-08-troubleshooting-automation-exam-review.md) | Troubleshooting, Automation, and Exam Review | Troubleshooting workflow, JSON, REST API concepts, controller-based networking |
+## Public package and usage
 
-## References
+- [Learner Guide](<LG-Cisco Certified Network Associate (CCNA).md>): detailed explanations and activity procedures.
+- [Courseware files](courseware/): the current visual deck, PDF, Learner Guide and Lesson Plan.
+- [Activities index](activities/README.md): the practical package and prerequisites.
+- [CCNA practice exam portal](https://exams.tertiaryinfotech.com/practice-exams/cisco/cisco-ccna): original practice questions, learning mode and timed practice.
 
-- CCNA Study Guide: https://www.mindmeshacademy.com/certifications/cisco/ccna/study-guide
-- Course registration: https://www.tertiarycourses.com.sg/wsq-cisco-certified-network-associate-ccna.html
-- Cisco CCNA certification: https://www.cisco.com/site/us/en/learn/training-certifications/certifications/enterprise/ccna/index.html
-- Cisco Packet Tracer: https://www.netacad.com/courses/packet-tracer
+The current courseware release is v7.0. Use the entire activity folder so local scripts can find their fixtures. Synthetic results do not demonstrate that real equipment has been configured successfully; retain genuine device outputs for sandbox verification.
 
-## Free Tools Used
+## Distribution boundary
 
-- Cisco Packet Tracer
-- Wireshark
-- PuTTY, Tera Term, or Windows Terminal
-- Cisco IOS command-line help
-- Draw.io / diagrams.net for topology diagrams
-- Text editor for saving configurations and command outputs
+This public repository contains learner-facing courseware and activities. Formal assessment papers, answer keys, source references, credentials, private generators and QA files are excluded. Formal assessment and submission materials are distributed through the provider's authorised Drive and LMS/TMS channels; answer keys remain trainer-only.
+
+## Provider
+
+Tertiary Infotech Academy Pte Ltd · UEN 201200696W
+
+[Course registration and current funding terms](https://www.tertiarycourses.com.sg/wsq-cisco-certified-network-associate-ccna.html)
